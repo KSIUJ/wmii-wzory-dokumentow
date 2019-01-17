@@ -11,7 +11,7 @@
 % \usepackage{times}
 
 \usepackage[
-pdftitle={Wniosek o skreślenie z listy studentów},
+pdftitle={Oświadczenie o powrocie z urlopu},
 colorlinks=true,linkcolor=black,urlcolor=black,citecolor=black]{hyperref}
 \urlstyle{same}
 
@@ -23,17 +23,22 @@ bindingoffset=0mm, top=25mm,bottom=25mm}
 \linespread{1.3}
 \pagestyle{empty}
 
+% \newlength{\signaturelength}
+% \newcommand{\fillField}[2]{
+%     $\underset{\text{#1}}{\underline{\hspace{#2}}}$
+% }
 \newcommand{\fillField}[2]{
     $\underset{\text{#1}}{\parbox[t]{#2}{\dotfill}}$
 }
 
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
 
 \begin{document}
 \noindent
 \fillField{(imię i nazwisko studenta)}{5cm} \hfill Kraków, dnia \fillField{}{2cm} \\\\
 \textbf{Nr albumu:}   \fillField{}{2.3cm}\\
 \textbf{Rok studiów:} \fillField{}{2cm}\\
-\textbf{Kierunek:} Informatyka -- studia stacjonarne pierwszego stopnia\\
+\textbf{Kierunek:} Matematyka komputerowa – studia stacjonarne pierwszego/drugiego* stopnia\\
 \textbf{Adres:}\\
 \fillField{(nr kodu pocztowego - miejscowość)}{5cm}\\\\
 \fillField{(ulica/osiedle – nr domu/mieszkania)}{5cm}\\\\
@@ -42,36 +47,33 @@ bindingoffset=0mm, top=25mm,bottom=25mm}
 
 % \vskip 1.0cm
 
-\phantom{a}\hfill
-\begin{tabular}[c]{@{}l@{}}
-\textit{Prodziekan ds. studenckich} \\
-\textit{Wydziału Matematyki i Informatyki}\\
-\textit{dr hab. Piotr Niemiec}
-\end{tabular}
+% \phantom{a}\hfill
+% \begin{tabular}[c]{@{}l@{}}
+% \textit{Kierownik studiów pierwszego i drugiego stopnia} \\
+% \textit{na kierunku Matematyka komputerowa}\\
+% \textit{...}
+% \end{tabular}
 
 \vskip 2.0cm
 
 \begin{center}
-{\Large \textbf{Wniosek o skreślenie z listy studentów}}
+{\Large \textbf{Oświadczenie o powrocie z urlopu dziekańskiego/studenckiego}}
 \end{center}
 
 \vskip 0.5cm
 
 % \noindent
-Zwracam się z prośbą o skreślenie z listy studentów \fillField{}{2cm} roku w roku akademickim \fillField{}{1cm}/\fillField{}{1cm}. Powodem skreślenia jest rezygnacja ze studiów.
-Oświadczam, że nie będę odwoływał/a się od decyzji skreślenia.
-
+Oświadczam, że podejmuję studia po powrocie z urlopu \textbf{dziekańskiego/studenckiego}
+\footnote[1]{niepotrzebne skreślić} udzielonego na \fillField{}{2cm} roku studiów
+pierwszego/drugiego* stopnia w roku akademickim 20\fillField{}{0.7cm}/20\fillField{}{0.7cm}
+[semestr zimowy/letni\textsuperscript{*}] na kierunku Matematyka komputerowa i proszę o wpisanie
+mnie na listę studentów \fillField{}{2cm} roku w roku
+akademickim 20\fillField{}{0.7cm}/20\fillField{}{0.7cm}.
 
 \vskip 2.0cm
 
-\hspace{\fill} Z~poważaniem, \hspace{2.0cm}
-\vskip 4.0cm
+\hspace{\fill} \fillField{(podpis studenta)}{5cm} \hspace{2.0cm}
 
-\noindent
-\textbf{Decyzja Dziekana} \dotfill
-\vskip 0.5cm
-\noindent
-Data ……………………………… Podpis \dotfill
 
 \end{document}
- 
+

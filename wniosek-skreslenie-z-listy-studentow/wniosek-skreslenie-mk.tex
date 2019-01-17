@@ -18,7 +18,7 @@ colorlinks=true,linkcolor=black,urlcolor=black,citecolor=black]{hyperref}
 \usepackage{geometry}
 \geometry{total={210mm,297mm},
 left=25mm,right=25mm,%
-bindingoffset=0mm, top=25mm,bottom=25mm}
+bindingoffset=0mm, top=25mm,bottom=20mm}
 
 \linespread{1.3}
 \pagestyle{empty}
@@ -27,13 +27,15 @@ bindingoffset=0mm, top=25mm,bottom=25mm}
     $\underset{\text{#1}}{\parbox[t]{#2}{\dotfill}}$
 }
 
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
 
 \begin{document}
 \noindent
 \fillField{(imię i nazwisko studenta)}{5cm} \hfill Kraków, dnia \fillField{}{2cm} \\\\
 \textbf{Nr albumu:}   \fillField{}{2.3cm}\\
 \textbf{Rok studiów:} \fillField{}{2cm}\\
-\textbf{Kierunek:} Informatyka -- studia stacjonarne pierwszego stopnia\\
+\textbf{Kierunek:} Matematyka komputerowa – studia stacjonarne
+pierwszego/drugiego\footnote[1]{niepotrzebne skreślić} stopnia\\
 \textbf{Adres:}\\
 \fillField{(nr kodu pocztowego - miejscowość)}{5cm}\\\\
 \fillField{(ulica/osiedle – nr domu/mieszkania)}{5cm}\\\\
@@ -58,7 +60,8 @@ bindingoffset=0mm, top=25mm,bottom=25mm}
 \vskip 0.5cm
 
 % \noindent
-Zwracam się z prośbą o skreślenie z listy studentów \fillField{}{2cm} roku w roku akademickim \fillField{}{1cm}/\fillField{}{1cm}. Powodem skreślenia jest rezygnacja ze studiów.
+Zwracam się z prośbą o skreślenie z listy studentów \fillField{}{2cm} roku w roku
+akademickim \fillField{}{1cm}/\fillField{}{1cm}. Powodem skreślenia jest rezygnacja ze studiów.
 Oświadczam, że nie będę odwoływał/a się od decyzji skreślenia.
 
 
@@ -74,4 +77,4 @@ Oświadczam, że nie będę odwoływał/a się od decyzji skreślenia.
 Data ……………………………… Podpis \dotfill
 
 \end{document}
- 
+
